@@ -80,7 +80,7 @@
       "answer":"Monero opts for a constant block reward, currently at 0.6 XMR, as well as transaction fees to incentivize miners to secure the network. The constant block reward serves multiple purposes: it keeps transaction fees low, provides a perpetual incentive for miners, and contributes to network security. This system leads to a 'tail emission,' which creates a diminishing rate of inflation, trending towards 0% over time. The fixed emission rate also safeguards against human corruption affecting the supply, helping to keep the network predictable, decentralized, and secure."
    },
    {
-      "question":"What is the difference between a lightweight and a normal wallet?",
+      "question":"What is the difference between a lightweight and a normal Monero wallet?",
       "answer":"In a lightweight wallet, you delegate the task of scanning the blockchain for incoming transactions to a third-party node by giving it your view key. While this node will know when you receive transactions, it won't know the amount, sender, or receiver. This setup is generally less privacy-focused but more convenient. On the other hand, a normal wallet gives you the option to use your own node, enhancing your privacy. In this setup, all transactions and blockchain scanning happen locally, offering a higher degree of control and privacy."
    },
    {
@@ -108,7 +108,7 @@
       "answer":"You can find a list of Monero nodes at various online sources. Two popular ones are https://www.ditatompel.com/monero/remote-node and https://monero.fail/. These websites offer a comprehensive list of available Monero nodes, helping you choose a reliable node to connect to."
    },
    {
-      "question":"Is it dangerous to use a remote node? What's the data a node operator can get from me?",
+      "question":"Is it dangerous to use a Monero remote node? What's the data a node operator can get from me?",
       "answer":"Using a remote node does come with privacy trade-offs. While convenient, a remote node operator can see the IP address from which a transaction originates, though they can't see the recipient or the amount. In extreme cases, attacks could further reduce your privacy. For those who are highly concerned with maintaining their privacy, using a personal node is advisable. However, you can mitigate some of the risks associated with using a remote node by using it over Tor, I2P, or a VPN."
    },
    {
@@ -128,7 +128,7 @@
       "answer":"There are various options for mining Monero depending on your needs. For solo mining using a CPU, you can utilize Monero's CLI or GUI wallets. For pool mining or GPU mining, you'll need specialized software. Commonly used mining software for Monero includes XMRig and CSminer. Both of these options support CPU and GPU mining. Note that some miners may have developer fees."
    },
    {
-      "question":"How can I prove a payment was done?",
+      "question":"How can I prove a MONERO payment was done?",
       "answer":"To prove a payment in Monero, you can make use of the payment ID, transaction ID, and the recipient's address. Both CLI and GUI Monero wallets offer features to prove payments cryptographically. For a detailed step-by-step guide, you can visit the Monero user guide on proving payments: https://web.getmonero.org/resources/user-guides/prove-payment.html"
    },
    {
