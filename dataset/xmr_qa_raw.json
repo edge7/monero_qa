@@ -662,5 +662,157 @@
   {
     "question": "Why does my Monero wallet need to be scanned every time I open it?",
     "answer": "Your Monero wallet needs to be scanned every time you open it because new transactions have been recorded on the Monero blockchain since the last time you used your wallet. The purpose of this scanning process is to check whether any of these new transactions belong to your wallet. By scanning the blockchain, your wallet ensures that it accurately reflects your balance and transaction history. In some wallet implementations like MyMonero or OpenMonero, a central server handles this scanning process for you, eliminating the need for your local wallet to perform it."
+  },
+  {
+    "question": "Where can I find Monero's legitimate webpage?",
+    "answer": "Monero's authentic website is located at https://www.getmonero.org/"
+  },
+  {
+    "question": "Can you describe MONERO (XMR)?",
+    "answer": "Monero stands as a premier cryptocurrency engineered for private and untraceable transactions. While most mainstream digital currencies like Bitcoin and Ethereum feature transparent blockchains, Monero employs multiple technologies to guarantee user anonymity."
+  },
+  {
+    "question": "What sets Monero apart from other digital currencies?",
+    "answer": "Distinct from partially transparent options such as Zcash, Monero guarantees anonymity for every user. It accomplishes this via a trio of key technologies: Stealth Addresses, Ring Signatures, and RingCT. Given that all transactions are anonymous, there's no way to trace Monero, establishing it as a truly fungible digital asset."
+  },
+  {
+    "question": "Could you elaborate on the Monero initiative?",
+    "answer": "The Monero initiative is a trailblazer in the realm of secure and private cryptocurrencies. Its Research Lab and Development Crew continually pioneer new technologies. The project has amassed contributions from over 500 developers globally since its inception."
+  },
+  {
+    "question": "Is there a brief video that summarizes MONERO (XMR)?",
+    "answer": "Certainly, it's available here: https://www.getmonero.org/media/Monero%20-%20The%20Essentials.m4v"
+  },
+  {
+    "question": "How do I go about receiving a Monero payment?",
+    "answer": "To accept Monero, simply share a payment address, often most conveniently via a QR code. Using Monero's GUI, each address comes with a corresponding QR code. Once scanned by the payer's mobile wallet, you'll receive your Monero within minutes. Creating multiple addresses can be useful for separating funds for different purposes."
+  },
+  {
+    "question": "How can I contribute to the Monero network?",
+    "answer": "Various avenues exist for contributing, including running a node, participating in development, or engaging in mining activities."
+  },
+  {
+    "question": "How can I set up a MONERO node?",
+    "answer": "For VPS setups, you might find this guide useful: https://www.getmonero.org/resources/user-guides/vps_run_node.html. Another comprehensive guide for more customization is here: https://sethforprivacy.com/guides/run-a-monero-node/"
+  },
+  {
+    "question": "Why should I consider running a MONERO node?",
+    "answer": "By operating a Monero node, you strengthen the network's decentralization, stability, and speed while also enhancing your own privacy at the network level."
+  },
+  {
+    "question": "Why can't I connect to my public MONERO node from my wallet?",
+    "answer": "Connectivity issues are often network-related. Ensure your ports are open, especially the RPC port, and check your port forwarding settings."
+  },
+  {
+    "question": "What hardware should I consider for running a full and pruned MONERO node?",
+    "answer": "For a Full Node, consider 2 or more CPU cores, 4GB of RAM, and a minimum of 175GB SSD storage. For a Pruned Node, 2 or more CPU cores, 4GB of RAM, and at least 75GB SSD storage are advisable."
+  },
+  {
+    "question": "What does running a pruned MONERO node entail?",
+    "answer": "A pruned node is a streamlined node that maintains full transaction history while reducing storage needs. 'Pruning' essentially removes a significant portion of unnecessary data, keeping only a fraction to help other nodes synchronize. A pruned node saves about two-thirds of the storage space required by a full node without sacrificing privacy or security."
+  },
+  {
+    "question": "How is Monero distinct from Bitcoin?",
+    "answer": "Monero and Bitcoin diverge fundamentally in technology and objectives. Monero prioritizes privacy by hiding transaction information, whereas Bitcoin transactions are public. Additionally, Monero offers features like dynamic block sizes and fees, ASIC-resistant mining, and a 'tail emission' to sustain long-term network security."
+  },
+  {
+    "question": "What's the origin of Monero's name?",
+    "answer": "The term 'Monero' comes from the Esperanto language, where it translates to 'coin'. Initially named 'Bitmonero', the 'bit' part was later dropped, resulting in just 'Monero'."
+  },
+  {
+    "question": "Does Monero impose a limit on block size?",
+    "answer": "No, Monero has a dynamic block size that adjusts according to transaction demand. The growth rate is capped to ensure manageable scalability."
+  },
+  {
+    "question": "How does Monero's privacy differ from other cryptocurrencies?",
+    "answer": "Monero employs a unique blend of ring signatures, RingCT, and stealth addresses to ensure the anonymity of the sender, amount, and recipient. Unlike other cryptos with optional privacy, Monero transactions are mandatorily private."
+  },
+  {
+    "question": "Is Monero a fail-proof privacy solution?",
+    "answer": "While Monero offers robust privacy technologies, it is not an infallible solution. It is paramount to adhere to proper operational security and privacy practices in other aspects of your digital life."
+  },
+  {
+    "question": "How does Monero counteract spam attacks with its dynamic block size?",
+    "answer": "Monero employs a block reward penalty mechanism that activates as the block size increases. This deterrent ensures that miners only augment the block size when transaction fees compensate for the drop in block rewards, thereby minimizing the risk of spam attacks."
+  },
+  {
+    "question": "Which technologies does Monero utilize for user privacy, and which one is highlighted?",
+    "answer": "Monero incorporates three core technologies to fortify user privacy: ring signatures, RingCT, and stealth addresses. The spotlight in this discussion is on stealth addresses, which are designed to obscure the recipient in any given transaction."
+  },
+  {
+    "question": "Why would someone opt for Monero's stealth addresses to conceal transaction recipients?",
+    "answer": "Stealth addresses in Monero can serve various legitimate needs, such as funding controversial political movements, donating to charities, or supporting socially marginalized individuals. They provide a secure avenue for such transactions, mitigating social or political fallout."
+  },
+  {
+    "question": "How do Monero's stealth addresses counter censorship and miner discretion?",
+    "answer": "Monero's stealth addresses neutralize the risk of transaction censorship by miners. In transparent blockchains like Bitcoin, miners can selectively include or exclude transactions based on their personal views of the recipients. Stealth addresses in Monero render transaction metadata indiscernible, thereby eliminating such discriminatory practices."
+  },
+  {
+    "question": "How do stealth addresses affect wallet setup and transaction verification in Monero compared to transparent cryptocurrencies?",
+    "answer": "In Monero, stealth addresses necessitate an additional verification layer absent in transparent cryptocurrencies like Bitcoin. Users must manually scan incoming transactions with their private key to identify funds meant for them, elongating the initial wallet setup and sync time."
+  },
+  {
+    "question": "What cryptographic foundation supports Monero's stealth addresses, and why is it considered secure?",
+    "answer": "Monero's stealth addresses are underpinned by elliptic curve cryptography, a highly trusted form of cryptography. The complexity and mathematical soundness of this method make it practically unbreakable, safeguarding not just Monero but also broader digital security ecosystems."
+  },
+  {
+    "question": "Why is self-custody of keys vital in Monero?",
+    "answer": "Self-custody of keys in Monero is essential for full privacy, transaction control, and censorship-resistance. When you manage your own keys, you shield yourself from exchange vulnerabilities and governmental intervention, while also mitigating the risk of exchange malpractice like fractional reserve lending."
+  },
+  {
+    "question": "How does relying on custodial services compromise Monero's privacy?",
+    "answer": "Using a custodial service essentially nullifies Monero's privacy features. The custodian has full visibility into your transaction details, including recipients and amounts, undermining the coin's core privacy functionalities."
+  },
+  {
+    "question": "How does self-custody empower Monero's censorship-resistance?",
+    "answer": "Owning your keys enhances Monero's intrinsic censorship-resistance. Self-custody allows you to bypass any governmental or institutional interference, offering a buffer against emerging authoritarian trends globally."
+  },
+  {
+    "question": "What are the risks associated with not self-custodying your Monero keys?",
+    "answer": "Failing to self-custody your Monero keys exposes you to theft and potential government confiscation. Centralized platforms are susceptible to hacks, and regulatory agencies could seize or freeze your assets if they reside on an exchange."
+  },
+  {
+    "question": "How does self-custody contribute to market stability and deter exchange malpractice in Monero?",
+    "answer": "Self-custody of Monero keys discourages exchanges from engaging in risky behaviors like fractional reserve lending. This contributes to market integrity, making Monero a more stable and trustworthy asset."
+  },
+  {
+    "question": "What are the steps to self-custody Monero?",
+    "answer": "For self-custody of Monero, opt for a wallet where you control the private keys. Store your seed phrase—a string of 14 or 25 random words—safely, as it serves as your wallet's ultimate backup. Desktop users can consider the official Monero wallet or Feather Wallet, while mobile users might find Cake Wallet or Monerujo suitable."
+  },
+   {
+    "question": "How does Monero ensure fungibility and why is it important?",
+    "answer": "Monero ensures fungibility through its strong privacy features like ring signatures, RingCT, and stealth addresses. Fungibility is crucial because it means each unit of Monero is interchangeable with any other, ensuring that users don't need to worry about a coin's history, thus enhancing its usability as a currency."
+  },
+  {
+    "question": "What is Kovri and how does it improve Monero?",
+    "answer": "Kovri is a privacy technology that aims to obscure the origin of transactions by routing them through a decentralized network similar to Tor. By doing so, it adds an extra layer of privacy, making it even harder to trace transactions back to their source."
+  },
+  {
+    "question": "How does Monero approach regulatory compliance?",
+    "answer": "Monero, by its nature, poses challenges for regulatory compliance due to its strong focus on privacy. However, the community encourages responsible use and has engaged in discussions with regulators to find a balance between privacy and compliance."
+  },
+  {
+    "question": "What are the hardware requirements for running a Monero node?",
+    "answer": "Running a Monero node typically requires a computer with at least 2GB of RAM and around 90GB of free disk space. The requirements may vary based on updates and the current size of the blockchain."
+  },
+  {
+    "question": "Why does Monero have a tail emission?",
+    "answer": "Monero's tail emission ensures a perpetual block reward, providing miners with an ongoing incentive to secure the network. This helps maintain the network's health and stability in the long term."
+  },
+  {
+    "question": "Is Monero compatible with hardware wallets?",
+    "answer": "Yes, Monero is compatible with certain hardware wallets like Ledger and Trezor, allowing users to benefit from an additional layer of security while maintaining control of their private keys."
+  },
+  {
+    "question": "How does Monero differ from Zcash in terms of privacy?",
+    "answer": "While both Monero and Zcash focus on privacy, they employ different methods. Monero's privacy features are always on, making every transaction private by default. Zcash offers both transparent and shielded transactions, leaving privacy as an option for users."
+  },
+  {
+    "question": "Can Monero transactions be optionally transparent?",
+    "answer": "No, Monero transactions are private by default and cannot be made transparent. However, users can share a view key to allow selected parties to audit their transaction history."
+  },
+  {
+    "question": "What are the challenges and criticisms faced by Monero?",
+    "answer": "Monero faces challenges like regulatory scrutiny due to its strong privacy features, as well as concerns about its use in illicit activities. Additionally, its privacy technologies make it more computationally intensive, leading to criticisms about scalability and energy consumption."
   }
 ]
