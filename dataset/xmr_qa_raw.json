@@ -814,5 +814,37 @@
   {
     "question": "What are the challenges and criticisms faced by Monero?",
     "answer": "Monero faces challenges like regulatory scrutiny due to its strong privacy features, as well as concerns about its use in illicit activities. Additionally, its privacy technologies make it more computationally intensive, leading to criticisms about scalability and energy consumption."
+  },
+   {
+    "question": "What does Monero's Simple Mode offer in terms of features and limitations?",
+    "answer": "Monero's Simple Mode offers an easy-to-navigate interface designed for basic functionality, such as sending and receiving Monero, viewing transaction history, and managing accounts. This mode connects to a third-party server known as a remote node, and it does not download the blockchain to your local machine. This is a good option if you have limited disk space or if you don't require maximum privacy. However, using a remote node may expose you to privacy risks."
+  },
+  {
+    "question": "How does Monero's Simple Mode (bootstrap) differ from Simple Mode and what are its privacy implications?",
+    "answer": "Monero's Simple Mode (bootstrap) also provides basic functionality like Simple Mode but starts a local node in the background to download the blockchain. While the blockchain is downloading, the local node temporarily connects to a third-party bootstrap node to let you transact immediately. Once the blockchain is fully synchronized, the connection to the bootstrap node is minimal. While this mode offers more privacy compared to Simple Mode, using a remote or bootstrap node can still pose privacy risks."
+  },
+  {
+    "question": "What are the advantages of using Monero's Advanced Mode?",
+    "answer": "Monero's Advanced Mode offers an extensive range of features for experienced users, including options to set custom transaction fees, engage in solo mining, and import key images, among other functionalities. It allows for the highest level of privacy by letting you run a local node without connecting to any remote or bootstrap node. You can also set a custom remote node, including .onion remote nodes for further anonymity."
+  },
+  {
+    "question": "In Monero's Advanced Mode, what does starting a local node without setting a bootstrap node achieve?",
+    "answer": "In Monero's Advanced Mode, starting a local node without setting a bootstrap node offers the maximum level of privacy. By not relying on any third-party nodes, all your transactions and synchronizations occur locally, ensuring that no external entity has visibility into your transactions."
+  },
+  {
+    "question": "Is there a trade-off in disk space when choosing between Monero's Simple and Advanced Modes?",
+    "answer": "Yes, there's a significant trade-off in disk space. In Monero's Simple Mode, the blockchain is not downloaded, saving at least 90 GB of disk space. In contrast, Advanced Mode will download the entire blockchain to your local machine, requiring substantial disk space. Simple Mode (bootstrap) also downloads the blockchain but allows you to use Monero while the download is in progress."
+  },
+  {
+    "question": "What are the risks associated with using a third-party remote node in Monero?",
+    "answer": "Using a third-party remote node in Monero exposes you to potential privacy risks. The entity running the remote node may log your IP address and transaction queries, compromising the privacy Monero aims to provide."
+  },
+  {
+    "question": "How can one maximize privacy when using Monero's GUI?",
+    "answer": "To maximize privacy in Monero's GUI, it is recommended to use the Advanced Mode and run a local node without setting a bootstrap node. This ensures that all transaction data stays on your local machine, and you are not reliant on any third-party servers, thus maintaining the highest level of privacy."
+  },
+  {
+    "question": "In Monero's Advanced Mode, what functionalities are available for transaction verification and proof?",
+    "answer": "In Monero's Advanced Mode, you have access to features like message verification, transaction proof, and transaction check. These functionalities enable you to validate the authenticity of transactions, ensure they have been included in the blockchain, and confirm receipt or sending of funds."
   }
 ]
