@@ -21,26 +21,58 @@
   },
   {
     "question": "How can I accept a payment in Monero (XMR) ?",
-    "answer": "To receive XMR you only need to provide the payer with an address where they can send funds to. Most of the time it's easier to just share a QR code and let the payer scan it, instead of copy-pasting the alphanumeric string. With the GUI every generated address come with its QR code. Make the person scan the QR code with the Monero wallet on their phone and receive your XMR in minutes. Remember you can generate as many addresses (subaddresses) as you want. This is useful if you want to keep funds separated for any reason.\n\nMerchants will probably find more convenient to use the 'Merchant' page (screenshot below), which is explained in detail in the 'Merchant view' section of the guide here: https://www.getmonero.org/get-started/accepting/#merchants"
+    "answer": "To receive XMR you only need to provide the payer with an address where they can send funds to. Most of the time it's easier to just share a QR code and let the payer scan it, instead of copy-pasting the alphanumeric string. With the GUI every generated address come with its QR code. Make the person scan the QR code with the Monero wallet on their phone and receive your XMR in minutes. Remember you can generate as many addresses (subaddresses) as you want. This is useful if you want to keep funds separated for any reason.\n\nMerchants will probably find more convenient to use the 'Merchant' page, which is explained in detail in the 'Merchant view' section of the guide here: https://www.getmonero.org/get-started/accepting/#merchants"
   },
   {
     "question": "How can I help the Monero (XMR) network?",
-    "answer": "There are several ways to help, you can: run a node, help in development or even just start mining"
+    "answer": "There are several ways to help, you can: run a node, help in development, trying to use Monero to buy goods and services or even just start mining"
   },
   {
     "question": "How can I run a MONERO (XMR) node?",
     "answer": "If you are planning to run it in a VPS, have a look at this: https://www.getmonero.org/resources/user-guides/vps_run_node.html . An other great guide for more customization is here: https://sethforprivacy.com/guides/run-a-monero-node/ "
   },
   {
-    "question": "Why should I run a MONERO (XMR) node?",
+    "question": "What are the advantages of using subaddresses in Monero (XMR)?",
+    "answer": "Subaddresses in Monero allow for greater privacy and organizational flexibility. By generating multiple subaddresses, you can keep funds separated for different purposes or transactions without linking them together. This makes it harder for external observers to associate multiple transactions with a single user. Furthermore, businesses can use subaddresses to categorize payments for easier accounting."
+  },
+  {
+    "question": "What are the privacy implications of using QR codes for Monero (XMR) transactions?",
+    "answer": "Using QR codes for Monero transactions simplifies the process of sharing your address, making it convenient and less prone to errors compared to manually copy-pasting the address. However, if the QR code is publicly displayed, anyone can scan it, knowing that it's a Monero address. Though they won't be able to see the transaction history, they will know the address to which payments are being made. For maximum privacy, it's advisable to generate unique QR codes for each transaction, which can be done through subaddresses."
+  },
+  {
+    "question": "How does mining contribute to the Monero  network?",
+    "answer": "Mining is a crucial part of the Monero network. Miners validate transactions and add them to the blockchain, maintaining the integrity and security of the system. By doing so, they help to decentralize the network, making it resistant to censorship and fraud. As a reward, miners receive newly minted Monero coins, thus contributing to the circulation of the currency."
+  },
+  {
+    "question": "Is there any documentation available for developers who want to contribute to Monero ",
+    "answer": "Yes, Monero has an active developer community, and there are various resources available for those interested in contributing. The Monero GitHub repository is a good starting point and contains all the source code and documentation. There are also numerous guides, forums, and chat rooms where developers can seek guidance and discuss contributions."
+  },
+  {
+    "question": "What security measures should I take when running a Monero node on a VPS?",
+    "answer": "When running a Monero node on a VPS, security should be a top priority. Always ensure that your VPS is secure by implementing SSH keys for authentication, enabling a firewall to restrict unauthorized access, and regularly updating your server's software to patch any security vulnerabilities. Make sure to follow best practices as outlined in guides, such as the ones provided on Monero's official website or other trusted sources."
+  },
+  {
+    "question": "Why should I run a MONERO node?",
     "answer": "The Monero network relies on a distributed web of Monero nodes, each of which validate transactions, propagate transactions to the rest of the network, and helps new nodes easily and quickly synchronize to the current state of the network.\n\nRunning a Monero node for yourself not only helps to give you the stronger network-level privacy guarantees, but also helps to increase the decentralization, stability, and speed of the Monero network."
   },
   {
-    "question": "I should have run a public MONERO (XMR) node, but I cannot access it with my wallet. why?",
+    "question": "I should have run a public MONERO  node, but I cannot access it with my wallet. why?",
     "answer": "It can be a networking issue (be sure your ports are open, in particular the RPC one, as well as port forwarding if needed). "
   },
   {
-    "question": "What is the recommended hardware for running a Full MONERO (XMR) Node and a Pruned Node?",
+    "question": "What is the difference between public and private addresses when running a Monero node?",
+    "answer": "In the context of a Monero node, a public address refers to the IP address that is accessible over the internet, allowing external connections to your node. A private address, on the other hand, is the local IP address assigned to your node within your private network. When running a public Monero node, you'll need to ensure that your public IP is properly mapped to your private IP through port forwarding to enable external connections to your node."
+  },
+  {
+    "question": "Why did my Monero wallet stop connecting to my public node?",
+    "answer": "If your Monero wallet suddenly stops connecting to your public node, there are a few possibilities to consider. One common issue is that your WAN (Wide Area Network) IP address might have changed, especially if your ISP (Internet Service Provider) assigns dynamic IPs. You can resolve this by updating the IP in your wallet settings or by setting up DDNS (Dynamic DNS) to associate a domain name with your constantly changing IP."
+  },
+  {
+    "question": "How can DDNS help in maintaining a consistent connection to my public Monero node?",
+    "answer": "DDNS (Dynamic DNS) can be extremely helpful if you're running a public Monero node with a dynamic IP address. DDNS services automatically update the DNS records to point to your new IP address whenever it changes. This ensures that you can maintain a consistent connection to your Monero node without manually updating the IP settings in your wallet or other connecting clients. This is particularly useful if your ISP frequently changes your WAN IP."
+  },
+  {
+    "question": "What is the recommended hardware for running a Full MONERO Node and a Pruned Node?",
     "answer": "For optimal performance, the recommended hardware specifications differ based on the type of node you're running:\n\nFull Node:\n- 2 or more vCPUs/cores\n- At least 4GB RAM\n- A minimum of 175GB SSD storage\n\nPruned Node:\n- 2 or more vCPUs/cores\n- At least 4GB RAM\n- A minimum of 75GB SSD storage"
   },
   {
@@ -242,6 +274,42 @@
   {
     "question": "Why is my Monero wallet taking so long to sync?",
     "answer": "The time it takes for a myMonero wallet to sync depends on a few factors. If you're running a full node, your computer has to download and verify the entire blockchain, which can be a slow process, particularly if you're using older hardware or have a slow internet connection. Even if you're using a remote node for a more lightweight setup, your wallet still needs to fetch and process transaction outputs related to your account, which can take hours. So, while running a full node is better for privacy, it does require more patience due to the longer sync times. If you're looking for a quicker solution and are willing to sacrifice a bit of privacy, you can use a remote node or a lightweight wallet."
+  },
+  {
+    "question": "Can you recommend a quick video that gives an overview of MONERO?",
+    "answer": "Certainly, you can check out this video for a quick rundown on MONERO essentials: https://www.getmonero.org/media/Monero%20-%20The%20Essentials.m4v"
+  },
+  {
+    "question": "What's the procedure for receiving a Monero payment?",
+    "answer": "To accept Monero, you'll simply need to share your payment address, typically as a QR code for ease of use. In the Monero GUI, every address you generate comes with its own QR code. Merchants may find it more beneficial to use the 'Merchant' interface, details of which are found in the Monero guide here: https://www.getmonero.org/get-started/accepting/#merchants"
+  },
+  {
+    "question": "In what ways can I contribute to the Monero ecosystem?",
+    "answer": "You have multiple options to support Monero, such as operating a node, engaging in development activities, transacting in Monero for goods and services, or by mining."
+  },
+  {
+    "question": "How do I set up a MONERO node?",
+    "answer": "To set up a MONERO node on a VPS, you can consult this guide: https://www.getmonero.org/resources/user-guides/vps_run_node.html. For additional customization options, this guide can be helpful: https://sethforprivacy.com/guides/run-a-monero-node/"
+  },
+  {
+    "question": "I've tried to set up a public MONERO node but can't connect it to my wallet. What could be the problem?",
+    "answer": "Connectivity issues might be due to your network settings. Ensure that the necessary ports are open, especially the RPC port. Port forwarding might also be needed depending on your network setup."
+  },
+  {
+    "question": "Is there a specialized Linux distribution for mining Monero?",
+    "answer": "Absolutely, MoneroOS is an optimized Linux distro designed with Monero mining in mind. It is built on Arch Linux and allows you to start mining Monero right after booting up. You can find more details and the source code on GitHub: https://github.com/4rkal/MoneroOS."
+  },
+  {
+    "question": "How can I financially back Monero?",
+    "answer": "Monero can be financially supported through contributions to the Community Crowdfunding System (CCS). This platform enables community members to fund proposals and initiatives aimed at advancing Monero. More details can be found at: https://ccs.getmonero.org/"
+  },
+  {
+    "question": "Can you explain the fungibility aspect of Monero and why it's vital?",
+    "answer": "Fungibility ensures that each unit of a currency is interchangeable and untraceable to its origin, a feature inherently present in Monero. Unlike other cryptocurrencies where each coin carries its entire transaction history, Monero's design renders each coin indistinct from others. This not only increases user privacy but also ensures that the value of each Monero unit remains constant."
+  },
+  {
+    "question": "Why does my Monero wallet sync so slowly?",
+    "answer": "Several factors can slow down the syncing of your Monero wallet, such as the type of node you're running and your hardware capabilities. If you're using a full node, the process will be lengthy as your computer has to download the entire blockchain. Lighter setups using remote nodes may also take time to fetch and process transaction outputs related to your account."
   },
   {
     "question": "Can I manually import the Monero blockchain?",
@@ -779,7 +847,7 @@
     "question": "What are the steps to self-custody Monero?",
     "answer": "For self-custody of Monero, opt for a wallet where you control the private keys. Store your seed phrase—a string of 14 or 25 random words—safely, as it serves as your wallet's ultimate backup. Desktop users can consider the official Monero wallet or Feather Wallet, while mobile users might find Cake Wallet or Monerujo suitable."
   },
-   {
+  {
     "question": "How does Monero ensure fungibility and why is it important?",
     "answer": "Monero ensures fungibility through its strong privacy features like ring signatures, RingCT, and stealth addresses. Fungibility is crucial because it means each unit of Monero is interchangeable with any other, ensuring that users don't need to worry about a coin's history, thus enhancing its usability as a currency."
   },
@@ -815,7 +883,7 @@
     "question": "What are the challenges and criticisms faced by Monero?",
     "answer": "Monero faces challenges like regulatory scrutiny due to its strong privacy features, as well as concerns about its use in illicit activities. Additionally, its privacy technologies make it more computationally intensive, leading to criticisms about scalability and energy consumption."
   },
-   {
+  {
     "question": "What does Monero's Simple Mode offer in terms of features and limitations?",
     "answer": "Monero's Simple Mode offers an easy-to-navigate interface designed for basic functionality, such as sending and receiving Monero, viewing transaction history, and managing accounts. This mode connects to a third-party server known as a remote node, and it does not download the blockchain to your local machine. This is a good option if you have limited disk space or if you don't require maximum privacy. However, using a remote node may expose you to privacy risks."
   },
