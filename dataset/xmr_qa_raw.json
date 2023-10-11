@@ -914,5 +914,29 @@
   {
     "question": "In Monero's Advanced Mode, what functionalities are available for transaction verification and proof?",
     "answer": "In Monero's Advanced Mode, you have access to features like message verification, transaction proof, and transaction check. These functionalities enable you to validate the authenticity of transactions, ensure they have been included in the blockchain, and confirm receipt or sending of funds."
+  },
+  {
+    "question": "Why in Monero we have a new block every two minutes and not every 10 seconds, for example?",
+    "answer": "If nodes can publish new blocks whenever they want, the network might fracture and diverge into many different, equally legitimate, chains. Say it takes 30 seconds to make sure everyone in the\nnetwork gets a new block. What if new blocks are sent out every 31, 15 seconds, 10 seconds, etc?\nWe can control how fast the entire network makes new blocks. If the time it takes to make a new block is much higher than the time for the previous block to reach most nodes, the network will tend to remain intact."
+  },
+  {
+    "question": "How does Monero's dynamic block size adjustment work in conjunction with its difficulty adjustment to ensure a stable and efficient network?",
+    "answer": "In Monero mining, the difficulty adjustment algorithm aims to ensure that new blocks are produced at a consistent rate, typically every two minutes. The newDifficulty is calculated using the equation newDifficulty = hashSpeed * targetTime. Here, hashSpeed is the total hash rate of the network, and targetTime is the desired block time. This calculation is not a guarantee for the next block but rather a statistical expectation. Over a large number of blocks, and with constant re-calibration, this ensures that the average block time hovers close to the target time, helping to maintain the network's stability and functionality."
+  },
+  {
+    "question": "What are the implications for the Monero network if an attacker succeeds in controlling over 50% of the network's hash speed, and how does the concept of cumulative difficulty play a role in this scenario?",
+    "answer": "For an attacker to successfully alter the transaction history, they would need to create a fork with a higher total difficulty than the main chain, which continues to grow. Achieving this is extraordinarily difficult unless the attacker controls more than 50% of the network's hash rate. This is known as a 51% attack and is considered to be impractical for most well-established blockchain networks due to the sheer computational power required. Thus, the difficulty adjustment mechanism acts as a security feature, making it prohibitive for attackers to alter the blockchain."
+  },
+  {
+    "question": "In the event of a Monero chain fork with equal cumulative difficulty, how might network latency or data propagation delays affect which chain nodes choose to continue mining?",
+    "answer": "In blockchain networks like Monero, the protocol resolves chain forks by selecting the chain that has the highest cumulative difficulty as the authoritative version. Cumulative difficulty isn't just a measure of how 'long' the chain is, but also how much computational effort has been expended in creating it. If two branches have the same cumulative difficulty, nodes stick to the first one they received. They will abandon or orphan the other chain only when their chosen chain falls behind in cumulative difficulty. This approach ensures that the network reaches a consensus in a decentralized manner."
+  },
+  {
+    "question": "How has Monero's shift from Cryptonight to RandomX affected the miner ecosystem, especially with regard to ASIC resistance and the level of decentralization?",
+    "asnwer": "Monero has undergone several iterations of its proof-of-work (PoW) hash algorithm to adapt to changes in hardware capabilities and to maintain its commitment to decentralization. Initially, it used Cryptonight, designed to be inefficient on specialized hardware like GPUs, FPGAs, and ASICs. As technology evolved and ASICs for Cryptonight were developed, Monero transitioned through a series of variants—Cryptonight V2 and Cryptonight-R—to counter these specialized machines. In November 2019, Monero implemented RandomX, a radical departure designed specifically for long-term ASIC resistance, making it difficult for specialized hardware to gain a disproportionate advantage in the mining process."
+  },
+  {
+    "answer": "In Monero, block miners create a 'miner transaction' prior to mining a block. This transaction has no inputs but has at least one output, which comprises the block reward plus the transaction fees from all the transactions set to be included in the block. This transaction is crucial for both distributing money and incentivizing mining. If block rewards did not exist, the motivation to mine would be significantly reduced, making the network vulnerable to a 51% attack. Additionally, as Monero's value and block rewards increase, competition among miners intensifies. This drives up the network's total hash rate, consequently making it increasingly difficult and costly for an attacker to accumulate more than 50% of the network’s hash power.",
+    "question": "How does the Monero mechanism of continuously providing block rewards in Monero contribute to the network's overall security and resistance against 51% attacks?"
   }
 ]
