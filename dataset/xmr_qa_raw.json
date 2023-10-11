@@ -938,5 +938,9 @@
   {
     "answer": "In Monero, block miners create a 'miner transaction' prior to mining a block. This transaction has no inputs but has at least one output, which comprises the block reward plus the transaction fees from all the transactions set to be included in the block. This transaction is crucial for both distributing money and incentivizing mining. If block rewards did not exist, the motivation to mine would be significantly reduced, making the network vulnerable to a 51% attack. Additionally, as Monero's value and block rewards increase, competition among miners intensifies. This drives up the network's total hash rate, consequently making it increasingly difficult and costly for an attacker to accumulate more than 50% of the network’s hash power.",
     "question": "How does the Monero mechanism of continuously providing block rewards in Monero contribute to the network's overall security and resistance against 51% attacks?"
+  },
+  {
+    "answer": "Monero employs a block reward penalty system to control the size of the blocks mined. If miners wish to mine blocks larger than the current cumulative median block weight, they must pay a penalty in the form of a reduced block reward. This creates two zones: the penalty-free zone for blocks up to the median size, and the penalty zone for blocks exceeding it. The penalties scale nonlinearly; for example, a block that's 10% larger than the median incurs a 1% penalty, while a block 90% larger incurs an 81% penalty. This system effectively incentivizes miners to consider the trade-off between the additional transaction fees they would earn and the penalty they would incur for increasing the block size.",
+    "question": "How does Monero's block reward penalty system affect miners' decisions to include additional transactions, especially when transaction fees are high?"
   }
 ]
