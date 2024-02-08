@@ -5,6 +5,5 @@ Session("username") = "admin"
 Session("id_utente") = 500
 Session("nome") = "MyName"
 Session("ruolo") = 0
-Response.Redirect(Session("urlTarget"))
 Response.Redirect("/redazione")
 %>
